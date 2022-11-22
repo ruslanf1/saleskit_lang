@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('groups_permissions', function (Blueprint $table) {
             $table->id();
-
             $table->unsignedBigInteger('group_id');
             $table->unsignedBigInteger('permission_id');
 
